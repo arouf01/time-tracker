@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Management</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="title">Task Management</h1>
-        <div id="newTaskAdd" class="task-input">
-            <input id="newTaskValue" type="text" placeholder="Enter new task...">
-            <button onclick="addNewTask()" class="add-task-btn">Add New Task</button>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Time Tracker</title>
+        <link rel="shortcut icon" href="images/clock.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Time Tracker</h1>
+            <div id="newTaskAdd" class="task-input">
+                <input id="newTaskValue" type="text"
+                    placeholder="Enter new task...">
+                <button onclick="addNewTask()" class="add-task-btn">Add New
+                    Task</button>
+            </div>
 
-        <div id="allTaskList">
-            <h2 class="task-header">All Tasks</h2>
-            <div id="allTask">
-                  <!---->
-                  <div id="taskList" class="task">
-                        <h3 id="taskName" class="task-name">New Project</h3>
+            <div id="allTaskList">
+                <h2 class="task-header">All Tasks</h2>
+                <div id="allTask">
+                    <!-- Demo Task -->
+                    <div id="taskDetailsBox" class="task taskDetailsBox">
+                        <h3 id="taskName" class="task-name">Demo Task</h3>
                         <div class="task-info">
-                            <div class="timer" id="timer">00:00:00</div>
+                            <div class="timer">00:00:00</div>
                             <div class="controls">
-                                <button id="startBtn" class="btn start-btn">Start</button>
-                                <button id="stopBtn" class="btn stop-btn">Stop</button>
-                                <button id="resetBtn" class="btn reset-btn">Reset</button>
+                                <button id="startBtn"
+                                    class="btn start-btn">Start</button>
+                                <button id="stopBtn"
+                                    class="btn stop-btn">Pause</button>
+                                <button id="resetBtn"
+                                    class="btn reset-btn">Reset</button>
                             </div>
                         </div>
                     </div>
-                    <!---->
+                    
+                </div>
             </div>
         </div>
-    </div>
-
-    <script src=""></script>
-    <script src="main.js"></script>
-</body>
+        <script src="main.js"></script>
+    </body>
 </html>
